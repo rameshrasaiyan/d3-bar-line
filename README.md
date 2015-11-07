@@ -1,6 +1,7 @@
 # Frontend Kick Start
 
 <a href="http://gulpjs.com/"><img src="https://avatars2.githubusercontent.com/u/6200624?v=3&s=200" align="left" hspace="10" vspace="6"></a>
+<a href="https://nodejs.org/"><img src="https://nodejs.org/static/images/logos/nodejs.png" align="left" hspace="10" vspace="6"></a>
 
 This repository will have all the required files to kick start a front end project.
 To run this code you need Node.js, compass installed already in the machine.
