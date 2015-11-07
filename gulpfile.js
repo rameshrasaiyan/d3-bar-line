@@ -6,7 +6,8 @@ var gulp = require('gulp'),
     compass = require('gulp-compass'),
     plumber = require('gulp-plumber'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    webserver = require('gulp-webserver');
 
 /*****************************************
  * Gulp task for compiling scss files    *
@@ -44,9 +45,25 @@ gulp.task('watch', function() {
 });
 
 
+/****************************************************
+ * Gulp task for simple HTTP server                 *
+ * Add the folder name in gulp.src('folderName')    *
+ * to the server to run                             *
+ ***************************************************/
+
+gulp.task('webserver', function() {
+    gulp.src('')
+        .pipe(webserver({
+            livereload: true,
+            directoryListing: true,
+            open: true
+        }));
+});
+
+
 /*****************************************
  * Gulp Default tasks,                   *
  * run `gulp` to excute all the tasks    *
  * and watch                             *
  ****************************************/
-gulp.task('default', ['styles', 'scripts', 'watch']);
+gulp.task('default', ['styles', 'scripts', 'webserver', 'watch']);
