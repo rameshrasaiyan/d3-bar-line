@@ -57,3 +57,9 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+path {
+  fill: none;
+  stroke: yellowgreen;
+  shape-rendering: crispEdges;
+}
